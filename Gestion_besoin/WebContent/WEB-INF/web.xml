@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>crud</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>ControleUser</servlet-name>
+		<servlet-class>controleur.ControleUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControleUser</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ControleUser</servlet-name>
+		<url-pattern>/listeUtilisateur</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ControleUser</servlet-name>
+		<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControleServiceAgence</servlet-name>
+		<servlet-class>controleur.ControleServiceAgence</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControleServiceAgence</servlet-name>
+		<url-pattern>/listeServiceAgence</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControleDirection</servlet-name>
+		<servlet-class>controleur.ControleDirection</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControleDirection</servlet-name>
+		<url-pattern>/listeDirection</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControleDemande</servlet-name>
+		<servlet-class>controleur.ControleDemande</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControleDemande</servlet-name>
+		<url-pattern>/listeDemandeEffectuee</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ControleDemande</servlet-name>
+		<url-pattern>/listeDemandeRecue</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControleCategorie</servlet-name>
+		<servlet-class>controleur.ControleCategorie</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControleCategorie</servlet-name>
+		<url-pattern>/listeCategorie</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControleStatut</servlet-name>
+		<servlet-class>controleur.ControleStatut</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControleStatut</servlet-name>
+		<url-pattern>/listeStatut</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ControleArticle</servlet-name>
+		<servlet-class>controleur.ControleArticle</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControleArticle</servlet-name>
+		<url-pattern>/listeArticle</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControleTransfert</servlet-name>
+		<servlet-class>controleur.ControleTransfert</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControleTransfert</servlet-name>
+		<url-pattern>/listeTransfertTraite</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ControleTransfert</servlet-name>
+		<url-pattern>/listeTransfertRecu</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControleLigneDemande</servlet-name>
+		<servlet-class>controleur.ControleLigneDemande</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControleLigneDemande</servlet-name>
+		<url-pattern>/listeLigneDemande</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ControleLigneTransfert</servlet-name>
+		<servlet-class>controleur.ControleLigneTransfert</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControleLigneTransfert</servlet-name>
+		<url-pattern>/listeLigneTransfert</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>/style/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>/media/*</url-pattern>
+	</servlet-mapping>
+</web-app>
